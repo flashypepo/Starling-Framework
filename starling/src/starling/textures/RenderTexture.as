@@ -29,7 +29,7 @@ package starling.textures
 
     /** A RenderTexture is a dynamic texture onto which you can draw any display object.
      * 
-     *  <p>After creating a render texture, just call the <code>drawObject</code> method to render 
+     *  <p>After creating a render texture, just call the <code>draw</code> method to render
      *  an object directly onto the texture. The object will be drawn onto the texture at its current
      *  position, adhering its current rotation, scale and alpha properties.</p> 
      *  
@@ -153,9 +153,8 @@ package starling.textures
             super.dispose();
         }
         
-        /** Draws an object into the texture. Note that any filters on the object will currently
-         *  be ignored.
-         * 
+        /** Draws an object into the texture.
+         *
          *  @param object       The object to draw.
          *  @param matrix       If 'matrix' is null, the object will be drawn adhering its 
          *                      properties for position, scale, and rotation. If it is not null,
